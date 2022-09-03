@@ -1,0 +1,49 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Approved Requested MailService</title>
+</head>
+<body>
+
+    <div class="container" style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)" width="100%" height="100%">
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      	<tr>
+          <td valign="top" class="bg_white" style="padding: 1em 2.5em 0 2.5em;">
+          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          		<tr>
+          			<td class="logo" style="text-align: center;">
+			            <h1>VMS - Mailservice</h1>
+			          </td>
+          		</tr>
+          	</table>
+          </td>
+	      </tr>
+				<tr>
+          <td valign="middle" class="hero bg_white" style="padding: 0.5em 0 0.5em 0;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            	<tr>
+            		<td style="padding: 0 1em; text-align: center; padding-bottom: 1em;">
+            			<div class="text">
+            				<h2>Hello <b th:text="${name}"></b></h2> 
+            			</div>
+            		</td>
+            	</tr>
+            	<tr>
+			          <td style="text-align: center;">
+			          	<div class="text-author">
+				          	
+				          	<strong style="color:black">This is the</strong><h3> <b th:text="${emailType}"></b> Email</h3>
+				          	<span class="position"></span>
+							
+							<a th:href="${link}"> <b th:text="${linkMsg}"></b></a>
+				           	
+			           	</div>
+			          </td>
+			        </tr>
+            </table>
+          </td>
+	      </tr>
+      </table>
+    </div>
+</body>
+</html>
